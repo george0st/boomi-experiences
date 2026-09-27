@@ -4,7 +4,7 @@ cd ..
 python ProcessSchedules.py PROD -e "03-AZURE_PROD"
 python ComponentMetadata.py
 
-cd genmd
+cd genoutput
 rem -- GENERATE markdown files
 rundate.py ./schedules/generate_schedule_heatmap.py --json "../output/process_schedules <date>.json" --csv "../output/component_metadata <date>.csv" --out "../output/schedule-heatmap <date>.html"
 
