@@ -8,7 +8,7 @@ from fc.ExecutionSummaryRecord import ExecutionSummaryRecord
 from core.Setup import Setup
 
 
-Setup(["../setting_private.env", "setting.env"])
+Setup(["../../setting_private.env", "setting.env"])
 
 @contextmanager
 def timer(nazev="code"):

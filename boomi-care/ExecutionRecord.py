@@ -8,7 +8,7 @@ from core.BoomiAPI import BoomiAPI
 from core.Setup import Setup
 
 
-Setup(["../setting_private.env", "setting.env"])
+Setup(["../../setting_private.env", "setting.env"])
 
 @contextmanager
 def timer(name="code"):

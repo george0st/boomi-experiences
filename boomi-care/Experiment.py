@@ -5,7 +5,7 @@ from fc.ExecutionSummaryRecord import ExecutionSummaryRecord
 from core.Setup import Setup
 
 
-Setup(["../setting_private.env", "setting.env"])
+Setup(["../../setting_private.env", "setting.env"])
 
 def validate_environment() -> tuple[str, str, str]:
     """Validate required environment variables and return credentials"""
@@ -27,8 +27,6 @@ if __name__ == '__main__':
 
     # setup access to the BoomiAPI
     env = BoomiAPI(account_id, username, password)
-
-
 
     audit = ExecutionSummaryRecord(env,
                             go_back=5)

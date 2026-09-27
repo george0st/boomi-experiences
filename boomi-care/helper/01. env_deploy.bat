@@ -6,7 +6,7 @@ python DeployedPackage.py
 python ComponentMetadata.py
 
 
-cd genmd
+cd genoutput
 rem -- GENERATE markdown files
 rundate.py ./deployment/env_deploy.py "../output/environment <date>.csv" "../output/deployed_package <date>.csv" "../output/component_metadata <date>.csv" "../output/env_deploy <date>.md"
 

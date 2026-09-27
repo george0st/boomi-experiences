@@ -5,7 +5,7 @@ from core.BoomiAPI import BoomiAPI
 from core.Setup import Setup
 
 
-Setup(["../setting_private.env", "setting.env"])
+Setup(["../../setting_private.env", "setting.env"])
 
 def validate_environment() -> tuple[str, str, str]:
     """Validate required environment variables and return credentials"""
