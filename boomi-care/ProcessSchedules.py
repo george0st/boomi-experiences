@@ -14,7 +14,7 @@ from enum import Enum
 
 
 
-Setup(["../setting_private.env", "setting.env"])
+Setup(["../../setting_private.env", "setting.env"])
 
 
 class AddedItemType(Enum):
