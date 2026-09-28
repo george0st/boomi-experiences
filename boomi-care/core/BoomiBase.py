@@ -1,3 +1,5 @@
+import os
+
 from core.BoomiAPI import BoomiAPI
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
@@ -90,6 +92,7 @@ class BoomiBase:
         current_datetime = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
         file=file.replace("%datetime%",current_date)
 
+        os.makedirs(os.path.dirname(file), exist_ok=True)
         with open(file, "w", encoding=encoding) as f:
             f.write(self.__str__())
 
