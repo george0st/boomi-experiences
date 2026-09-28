@@ -21,10 +21,11 @@
 
 ## 2. Setup Boomi access
 
-Update the file **setting.env** and define these three items in the file:
- - **BOOMI_ACCOUNT** = <boomi account e.g. 'london-OFTM0E'>
- - **BOOMI_USER** = <boomi token e.g. 'BOOMI_TOKEN.john@london.uk'>
- - **BOOMI_SECRET** = <guid e.g. '851e2bf1-0870-4358-8c91-ec147e568b8'>
+Update the file **setting.env** and define these three items for connection to the Boomi:
+
+ - `BOOMI_ACCOUNT = <boomi account e.g. 'london-OFTM0E'>`
+ - `BOOMI_USER    = <boomi token e.g. 'BOOMI_TOKEN.john@london.uk'>`
+ - `BOOMI_SECRET  = <guid e.g. '851e2bf1-0870-4358-8c91-ec147e568b8'>`
 
 ## 3. Run prepared scripts
 
