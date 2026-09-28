@@ -17,7 +17,7 @@ The output is a single self-contained `.html` file with the data baked in
 (no external dependencies, no CDN, works even opened directly from disk via
 file://).
 
-Decisions confirmed by the user (Jiri Steuer, Dr. Max) for this specific
+Decisions confirmed by the data owner for this specific
 data set - see the info box in the header of the generated page:
   - Time zone: the input JSON schedules have no timezone field. The user
     confirmed that all times are in UTC and should be displayed as-is

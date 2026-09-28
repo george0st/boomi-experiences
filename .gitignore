@@ -1,5 +1,8 @@
 /boomi-care/output
 __pycache__/
 .idea/
-
 /.idea
+.venv/
+.venv2/
+setting.env
+

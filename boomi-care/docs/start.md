@@ -5,16 +5,16 @@
 ### 1.1 Clone boomi-experiences
 
  - You can use many of github clients such as [GitHub Desktop](https://desktop.github.com/download/),
-   ... or clients embeddit in your developer tools
- - It contains also the python project **boom-care**
+   ... or clients embeddit in your developer tools.
+ - It contains also the python project **boom-care**.
 
 ### 1.2 Install python 
- - You can focus on version **3.11 and higher**, see [Python Download](https://www.python.org/downloads/)
+ - You can focus on version **3.11 or higher**, see [Python Download](https://www.python.org/downloads/)
  - We tested Python version 3.11 and 3.14
 
 ### 1.2 Install addition python libraries
 
- - update pip to the last version
+ - It is useful to update **pip** to the last version
    - `python.exe -m pip install --upgrade pip`
  - These libraries are needed for correct python run
    - `pip install -r ./boomi-care/requirements.txt`
@@ -31,12 +31,12 @@ Update the file **setting.env** and define these three items for connection to t
 
 ### 3.1 Switch to relevant dir
 
- - switch do directory with *.bat scripts
+ - The switch do directory with *.bat scripts
    - `cd boomi-care/helper`
 
 ### 3.2 Run scripts
   
- - Run these scripts
+ - The run these scripts
 
    - `./00-security.bat`
    - `./01-deployed.bat`
