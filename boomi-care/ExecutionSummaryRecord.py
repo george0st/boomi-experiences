@@ -37,7 +37,7 @@ def validate_environment() -> tuple[str, str, str]:
 
     return account_id, username, password
 
-def process_day(env, current, threads = 8, step_minutes = 10):
+def process_day(env, current, atomId, threads = 8, step_minutes = 10):
 
     print(f"Processing {current.strftime("%Y.%m.%d")} ...")
     with timer("Execution"):
@@ -53,7 +53,8 @@ def process_day(env, current, threads = 8, step_minutes = 10):
                                 #group_items = ['atomName', 'atomId', 'nodeId', 'processName', 'processId', 'status', 'executionType'],
                                 #gount_items = ['inboundDocumentCount', 'inboundErrorDocumentCount', 'outboundDocumentCount'],
                                 threads = threads,
-                                step_minutes = step_minutes)
+                                step_minutes = step_minutes,
+                                atomId=atomId)
         audit.execute()
         print(audit)
         audit.dump(f"output/execution_sum_record %date% ({date_from.strftime("%Y%m%d")}).csv")
@@ -72,7 +73,7 @@ if __name__ == '__main__':
     try:
         while current <= date_to:
             env = BoomiAPI(account_id, username, password)
-            process_day(env, current, 8, 10)
+            process_day(env, current, "<atomId>", 8, 10)
             current += timedelta(days=1)
     except Exception as e:
         print(f"EXCEPTION: {e}")
