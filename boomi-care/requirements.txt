@@ -1,3 +1,7 @@
 
-#matplotlib>=3.5.0,<=3.9.2
-#matplotlib==3.11.1
+python-dateutil>=2.9.0
+requests>=2.34.2
+python-dotenv>=1.2.3
+
+# based on the 00-security.bat
+pillow>=12.3.0
