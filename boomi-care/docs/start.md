@@ -14,8 +14,10 @@
 
 ### 1.2 Install addition python libraries
 
+ - update pip to the last version
+   - `python.exe -m pip install --upgrade pip`
  - These libraries are needed for correct python run
- - `pip install -r boomi-experiences\boomi-care\requirements.txt`
+   - `pip install -r ./boomi-care/requirements.txt`
 
 ## 2. Setup Boomi access
 
@@ -29,7 +31,7 @@ Update the file **setting.env** and define these three items in the file:
 ### 3.1 Switch to relevant dir
 
  - switch do directory with *.bat scripts
-  `cd boomi-care/helper`
+   - `cd boomi-care/helper`
 
 ### 3.2 Run scripts
   
